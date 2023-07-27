@@ -67,9 +67,12 @@
 
 	<section>
 		<div class="container">
-      <textarea id="zinput" />
-      <button onclick="zrikeit"></button>
-      <textarea id="zoutput" />
+      <textarea id="zinput" name="zinput" rows="3" oninput="zrikeit()" ></textarea>
+      <textarea id="zoutput" name="zoutput" rows="3" ></textarea>
+      <input type="checkbox" id="doSpaces" name="doSpaces" onclick="zrikeit()">
+      <label for="doSpaces">do spaces</label>
+      <button onclick="zrikeit()">zrikeit like its hot</button>
+
     </div>
 	</section>
 
@@ -82,7 +85,19 @@
   <script>
     function zrikeit() {
       console.log('zrike')
-      console.log(document.querySelector('#zinput').value )
+      const charArr = document.querySelector('#zinput').value.split('')
+
+      const struckArr = charArr.map(c => {
+        if (c == ' ' && !doSpaces()) {
+          return c
+         }
+        return `${c}\u0336`
+      })
+      document.querySelector('#zoutput').value = struckArr.join('')
+    }
+
+    function doSpaces() {
+      return !!document.querySelector('#doSpaces').checked
     }
   </script>
  </body>
