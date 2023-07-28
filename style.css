@@ -85,11 +85,30 @@ code.image {
 	background-color: lightyellow;
 }
 
+button {
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+}
+
 .w-100 {
   width: 100%;
+}
+
+.p-0 {
+  padding: 0px;
+  border: 0px;
 }
 
 .my-2 {
   margin-top: 8px;
   margin-bottom: 8px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-spread {
+  justify-content: space-between;
 }

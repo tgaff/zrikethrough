@@ -4,7 +4,7 @@
  <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>ℤ̶trikethrough</title>
+	<title>ℤ̶rikethrough</title>
 	<link rel="canonical" href="https://simplepwa.com" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -24,17 +24,17 @@
 	<meta name="description" content="Simple Strikethrough" />
 	<meta name="robots" content="noodp" />
 	<meta name="author" content="Zelb Flaban">
-	<meta name="keywords" content="Strikethrough, easy, simple, simple strikethrough, Z, Ztrikethrough, strike through" />
+	<meta name="keywords" content="Strikethrough, easy, simple, simple strikethrough, Z, ℤ̶rikethrough, Ztrikethrough, Zrikethrough strike through" />
 	<meta property="og:locale" content="en_US" />
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Strikethrough" />
 	<meta property="og:description" content="Simple Strikethrough text maker" />
-	<meta property="og:url" content="https://github.com/tgaff/ztrikethrough" />
+	<meta property="og:url" content="https://github.com/tgaff/zrikethrough" />
 	<meta property="og:site_name" content="Simple Strikethrough" />
 	<!-- <meta property="section:publisher" content="https://www.facebook.com/simplepwa/" /> -->
 	<meta property="og:image" content="https://simplepwa.com/share.jpg" />
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Ztrikethrough" />
+	<meta name="twitter:title" content="ℤ̶rikethrough" />
 	<meta name="twitter:description" content="Simple Strikethrough" />
 	<!-- <meta name="twitter:site" content="@simplepwa" /> -->
 	<!-- <meta name="twitter:image" content="https://simplepwa.com/share.jpg" /> -->
@@ -58,19 +58,24 @@
 
 	<header>
 		<div class="container">
-			<h1>ℤ̶trikethrough</h1>
+			<h1>ℤ̶rikethrough</h1>
 		</div>
 	</header>
 
 	<section>
 		<div class="container">
       <!-- <div class="py-2"></div> -->
-      <textarea id="zinput" name="zinput" rows="4" oninput="zrikeit()" class="w-100 my-2" aria-label="input"></textarea>
+      <textarea id="zinput" name="zinput" rows="4" oninput="zrikeit()" class="w-100 my-2 p-0" aria-label="input"></textarea>
       <div class="w-100">
         <input type="checkbox" id="doSpaces" name="doSpaces" onclick="zrikeit()">
         <label for="doSpaces">do spaces</label>
       </div>
-      <textarea id="zoutput" name="zoutput" rows="4" class="w-100 my-2" aria-label="output"></textarea>
+      <textarea id="zoutput" name="zoutput" rows="4" class="w-100 my-2 p-0" aria-label="output"></textarea>
+      <div class="flex flex-spread w-100" >
+        <button type="button" name="copy" onclick="copyToClipboard()">copy to clipboard</button>
+        <button type="button" name="clear" onclick="clearInputs()">clear</button>
+      </div>
+
     </div>
 	</section>
 
@@ -85,8 +90,7 @@
 
   <script>
     function zrikeit() {
-      console.log('zrike')
-      const charArr = document.querySelector('#zinput').value.split('')
+      const charArr = zinput().value.split('')
 
       const struckArr = charArr.map(c => {
         if (c == ' ' && !doSpaces()) {
@@ -94,11 +98,42 @@
          }
         return `${c}\u0336`
       })
-      document.querySelector('#zoutput').value = struckArr.join('')
+      zoutput().value = struckArr.join('')
     }
 
     function doSpaces() {
       return !!document.querySelector('#doSpaces').checked
+    }
+
+    function clearInputs() {
+      zinput().value = '';
+      zoutput().value = '';
+    }
+
+    function zoutput() {
+      return document.querySelector('#zoutput')
+    }
+
+    function zinput() {
+      return document.querySelector('#zinput')
+    }
+
+    function copyToClipboard() {
+      const textField = zoutput()
+
+      textField.select();
+      textField.setSelectionRange(0, 99999); // For mobile devices
+
+      // Copy the text inside the text field
+      navigator.clipboard.writeText(textField.value);
+
+      // Alert the copied text
+      console.log("Copied the text: " + textField.value);
+
+      // set UI back
+      textField.setSelectionRange(0,0); // For mobile devices
+      zinput().select();
+      zinput().setSelectionRange(99999, 99999)
     }
   </script>
  </body>
