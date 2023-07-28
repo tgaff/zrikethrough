@@ -84,3 +84,12 @@ code {
 code.image {
 	background-color: lightyellow;
 }
+
+.w-100 {
+  width: 100%;
+}
+
+.my-2 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
