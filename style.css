@@ -115,6 +115,10 @@ button {
   justify-content: space-between;
 }
 
+.strikethrough {
+  text-decoration: line-through;
+}
+
 textarea {
   letter-spacing: .1rem;
   font-family: 'M PLUS Rounded 1c', Arial, Helvetica, sans-serif;
