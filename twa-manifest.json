@@ -1,0 +1,43 @@
+{
+  "packageId": "com.onrender.zrikethrough.twa",
+  "host": "zrikethrough.onrender.com",
+  "name": "Zrikethrough",
+  "launcherName": "Zrikethrough",
+  "display": "standalone",
+  "themeColor": "#000000",
+  "navigationColor": "#000000",
+  "navigationColorDark": "#000000",
+  "navigationDividerColor": "#000000",
+  "navigationDividerColorDark": "#000000",
+  "backgroundColor": "#000000",
+  "enableNotifications": true,
+  "startUrl": "/?utm_source=pwa_install",
+  "iconUrl": "https://zrikethrough.onrender.com/android-chrome-256x256.png",
+  "maskableIconUrl": "https://zrikethrough.onrender.com/maskable_icon.png",
+  "monochromeIconUrl": "https://zrikethrough.onrender.com/maskable_icon.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "/Users/travis/devel/strikethrough/android.keystore",
+    "alias": "android"
+  },
+  "appVersionName": "1",
+  "appVersionCode": 1,
+  "shortcuts": [],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://zrikethrough.onrender.com/manifest.json",
+  "fallbackType": "customtabs",
+  "features": {},
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "fullScopeUrl": "https://zrikethrough.onrender.com/",
+  "minSdkVersion": 19,
+  "orientation": "default",
+  "fingerprints": [],
+  "additionalTrustedOrigins": [],
+  "retainedBundles": [],
+  "appVersion": "1"
+}
