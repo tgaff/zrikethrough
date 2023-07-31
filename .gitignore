@@ -1,3 +1,6 @@
 *.apk
 *.idsig
 android.keystore
+
+.gradle/
+app/build/
