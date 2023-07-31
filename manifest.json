@@ -1,7 +1,7 @@
 {
-	"name": "Simple PWA",
-	"short_name": "Simple PWA",
-	"display": "standalone",
+	"name": "S",
+	"short_name": "Zrikethrough",
+	"display": "Zrikethrough",
 	"start_url": "./?utm_source=pwa_install",
 	"scope": ".",
 	"theme_color": "#000",
