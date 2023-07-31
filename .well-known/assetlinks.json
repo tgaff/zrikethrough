@@ -1,0 +1,10 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.onrender.zrikethrough.twa",
+    "sha256_cert_fingerprints": [
+      "21:51:46:EC:A7:00:11:51:D3:20:FB:D1:B4:AA:7E:CE:D8:5E:A1:30:31:49:88:B4:31:BB:69:18:7A:F1:46:78"
+    ]
+  }
+}]
