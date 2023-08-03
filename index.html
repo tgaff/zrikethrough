@@ -19,7 +19,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet"> -->
 
   <meta name="msapplication-TileColor" content="#000000">
 	<meta name="msapplication-TileImage" content="./mstile-144x144.png">
@@ -70,9 +70,8 @@
 
 	<section>
 		<div class="container">
-      <!-- <div class="py-2"></div> -->
       <textarea id="zinput" name="zinput" rows="4" oninput="zrikeit()" class="w-100 my-2 p-0" aria-label="input"></textarea>
-      <div class="w-100">
+      <div class="w-100" style="padding-bottom:3px;">
         <input type="checkbox" id="doSpaces" name="doSpaces" onclick="zrikeit()">
         <label for="doSpaces">do spaces</label>
       </div>
@@ -133,15 +132,16 @@
       // Copy the text inside the text field
       navigator.clipboard.writeText(textField.value);
 
-      // Alert the copied text
-      console.log("Copied the text: " + textField.value);
-
       // set UI back
       textField.setSelectionRange(0,0); // For mobile devices
       zinput().select();
       zinput().setSelectionRange(99999, 99999)
     }
   </script>
+  <style>
+    @import "//fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap"
+  </style>
+
  </body>
 
  </html>
