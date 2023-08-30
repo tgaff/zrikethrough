@@ -15,3 +15,10 @@ Next step packaging.
 1. Build it: `bubblewrap build`
 1. checkin the new version of `twa-manifest.json`
 1. Do something with the generated APK
+
+## updating icons
+
+1. Update favicon.png
+1. `real-favicon generate favicon_config.json favicon_data.json .`
+1. delete `favicon_data.json`
+1. commit
