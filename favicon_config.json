@@ -21,12 +21,12 @@
       "backgroundColor": "#ffffff",
       "onConflict": "override",
       "assets": {
-        "windows80Ie10Tile": false,
+        "windows80Ie10Tile": true,
         "windows10Ie11EdgeTiles": {
-          "small": false,
+          "small": true,
           "medium": true,
-          "big": false,
-          "rectangle": false
+          "big": true,
+          "rectangle": true
         }
       }
     },
