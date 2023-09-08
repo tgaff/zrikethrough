@@ -44,7 +44,7 @@ Simple PWA is "offline-first", using a ["cache falling back to the network"](htt
 - `README.md` Readme file
 - `robots.txt` Robots file
 - `safari-pinned-tab.svg` Favicon, Safari pinned tab
-- `share.jpg` Social media sharing
+- `share.png` Social media sharing
 - `sitemap.xml` Sitemap file
 - `sw.js` Service worker file
 - `style.css` Main CSS file
@@ -60,7 +60,7 @@ Simple PWA is "offline-first", using a ["cache falling back to the network"](htt
 
 3. Create new 650x650 maskable icon using [Maskable.app](https://maskable.app) and replace `maskable_icon.png`.
 4. Create new black vector icon using [`Manytools' colorize images tool`](http://manytools.org/image/colorize-filter) and replace [`safari-pinned-tab.svg`](https://github.com/nikkifurls/simple-pwa/blob/master/safari-pinned-tab.svg).
-5. Create new 1200x630 share image and replace `share.jpg`.
+5. Create new 1200x630 share image and replace `share.png`.
 6. Build your PWA by adding HTML, CSS, and Javascript.
 
 ### Can I contribute?

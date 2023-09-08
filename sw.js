@@ -1,4 +1,4 @@
-const cacheName = "cache3"; // Change value to force update
+const cacheName = "cache3.00001"; // Change value to force update
 
 self.addEventListener("install", event => {
   // Kick out the old service worker
@@ -42,7 +42,7 @@ self.addEventListener("install", event => {
         "mstile-310x150.png", // Favicon, Windows 8 / IE11
         "mstile-310x310.png", // Favicon, Windows 8 / IE11
         "safari-pinned-tab.svg", // Favicon, Safari pinned tab
-        "share.jpg", // Social media sharing
+        "share.png", // Social media sharing
         "style.css", // Main CSS file
       ]);
     })
